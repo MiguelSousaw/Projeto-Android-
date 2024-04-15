@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+}
+
+@font-face {
+    font-family:'Kanit';
+    src: url(agregados/Kanit/Kanit-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Bps';
+    src: url(Black_Ops_One/BlackOpsOne-Regular.ttf) format(truetype);
+}
+
+#titulo-1{
+    font-size: 25px;
+    text-align: left;
+    padding: 10px;
+    font-family: 'Bps';
+    color: green;
+}
+
+header{
+    background-image: linear-gradient(180deg, rgb(57, 205, 123) 40%, rgb(25, 99, 57) 90%);
+}
+
+#titulo-header{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Kanit';
+}
+
+header > p{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 400px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Kanit';
+}
+
+/*-----------------------------MAIN---------------------------------*/
+
+main{
+    margin: auto;
+    background-color: white;
+    width: 600px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+img{
+    width: 550px;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+li{
+    list-style: url(agregados/novo1.png);
+
+}
+
+.fontes-estranhas{
+    font-family: 'Bps';
+    background-image: linear-gradient(90deg, #9cff11,#c8fd65, #ffffff );
+    color: green;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*-----------------------------ARTICLES---------------------------------*/
+
+#video{
+    background-color: rgb(8, 54, 8);
+    padding: 20px;
+}
+
+p{
+    margin: 5px;
+    padding: 10px;
+    text-indent: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bloco-separado{
+    background-color: rgb(153, 246, 153);
+    margin: 15px;
+    border-radius: 10px;
+    font-family: 'Kanit';
+}
+
+#bloco-separado > h4{
+    background-color: green;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 5px;
+}
+
+.in{
+    margin: 5px;
+    text-align: justify;
+}
+
+.direita{
+    display: inline-block;
+    margin-left: 70px;
+    color: white;
+  
+}
+
+.esquerda{
+    display: inline-block; 
+    color: #ffffff;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(4, 51, 4);
+    margin-top: 20px;
+    font-family: 'Arial';
+}
+
+.bolder{
+    font-weight: bold;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.link::after{
+    content: '🔗';
+}
+
+a:hover{
+    background-color: #c8fd65;
+    text-decoration: underline;
+}
