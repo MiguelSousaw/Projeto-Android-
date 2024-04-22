@@ -6,46 +6,56 @@
 
 @font-face {
     font-family:'Kanit';
-    src: url(agregados/Kanit/Kanit-Bold.ttf) format(truetype);
+    src: url(fontes/Kanit/Kanit-Black.ttf) format(truetype);
 }
 
 @font-face {
     font-family: 'Bps';
-    src: url(Black_Ops_One/BlackOpsOne-Regular.ttf) format(truetype);
+    src: url(fontes/Black_Ops_One/BlackOpsOne-Regular.ttf) format(truetype);
 }
 
 #titulo-1{
     font-size: 25px;
     text-align: left;
-    padding: 10px;
     font-family: 'Bps';
     color: green;
 }
 
 header{
     background-image: linear-gradient(180deg, rgb(57, 205, 123) 40%, rgb(25, 99, 57) 90%);
+    min-height: 150px;
 }
 
 #titulo-header{
-    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
     color: white;
+    text-align: center;
     padding: 20px;
     font-family: 'Kanit';
+    font-size: 3em;
 }
 
 header > p{
-    color: white;
     text-align: center;
+    color: white;
+    padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
-    width: 400px;
+    margin-bottom: 30px;
+    max-width: 500px;
+    font-size: 1.2em;
 }
 
 nav > a {
-    color: white;
+    color: rgb(25, 144, 53);
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav{
     padding: 10px;
-    font-family: 'Kanit';
 }
 
 /*-----------------------------MAIN---------------------------------*/
@@ -53,8 +63,11 @@ nav > a {
 main{
     margin: auto;
     background-color: white;
-    width: 600px;
+    max-width: 1000px;
+    min-width: 320px;
     border-radius: 0px 0px 20px 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.373);
 }
 
 body{
@@ -62,39 +75,33 @@ body{
 }
 
 img{
-    width: 550px;
-    margin: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 15px;
+    width: 100%;
 }
 
-li{
-    list-style: url(agregados/novo1.png);
-
+ul{
+    /*list-style: url(imagens/novo1.png); uma maneira de alterar o marcador, usando imagens*/
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside; /*Posição do marcador*/
+    columns: 2; /*divide minha lista em quantas colunas quiser*/
+    color: rgb(17, 83, 17);
 }
 
 .fontes-estranhas{
     font-family: 'Bps';
-    background-image: linear-gradient(90deg, #9cff11,#c8fd65, #ffffff );
+    background-image: linear-gradient(90deg, #9cff11, transparent);
     color: green;
     font-size: 17px;
-    margin-left: 10px;
     margin-right: 10px;
 }
 
 /*-----------------------------ARTICLES---------------------------------*/
 
-#video{
-    background-color: rgb(8, 54, 8);
-    padding: 20px;
-}
-
 p{
     margin: 5px;
-    padding: 10px;
     text-indent: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em; /*altura entre linhas*/
+    font-size: 1em;
 }
 
 #bloco-separado{
@@ -102,13 +109,18 @@ p{
     margin: 15px;
     border-radius: 10px;
     font-family: 'Kanit';
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.378);
+    padding: 10px;
 }
 
 #bloco-separado > h4{
+    margin: -10px -10px 0px -10px;
     background-color: green;
     color: white;
     border-radius: 10px 10px 0px 0px;
-    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding: 5px;
 }
 
 .in{
@@ -116,24 +128,14 @@ p{
     text-align: justify;
 }
 
-.direita{
-    display: inline-block;
-    margin-left: 70px;
-    color: white;
-  
-}
-
-.esquerda{
-    display: inline-block; 
-    color: #ffffff;
-}
 
 footer{
     text-align: center;
     color: white;
     background-color: rgb(4, 51, 4);
-    margin-top: 20px;
+    padding: 5px;
     font-family: 'Arial';
+    margin-top: 20px;
 }
 
 .bolder{
@@ -152,5 +154,36 @@ a{
 
 a:hover{
     background-color: #c8fd65;
+    border-radius: 4px;
     text-decoration: underline;
+}
+
+nav > a:hover{
+    background-color: #07f093;
+    border-radius: 10px;
+    color: #134a1862;
+    transition-duration: 0.5s; /*transição de animção*/
+}
+
+.pequena{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+#video{
+    background-color: rgb(8, 54, 8);
+    padding: 30px;
+    margin: 0px -20px 15px -20px; /*Usar o menos faz minha margem crescer para fora*/
+    position: relative;
+    padding-bottom: 59%;
+    height: 0px;
+}
+
+#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
